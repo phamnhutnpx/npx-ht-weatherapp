@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://i.pinimg.com/originals/19/e5/fa/19e5fada1fae82de373df969a425cccc.jpg");
+  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 40px;
+}
+
+.container {
+  margin: 0 auto;
+  color: #fff;
+  width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 1 1 1 0 #ccc;
+  box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.container .title-app {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.container .main-section .search-bar {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+.container .main-section .search-bar .search-icon {
+  left: 0;
+  position: absolute;
+  margin-left: -25px;
+}
+.container .main-section .search-bar .search-input {
+  font-family: inherit;
+  border: 0;
+  border-bottom: 2px solid #ccc;
+  outline: 0;
+  font-size: 1.1rem;
+  color: #fff;
+  padding: 3px 3px 3px 20px;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.container .main-section .search-bar .search-input::placeholder {
+  color: #ccc;
+}
+.container .main-section .info-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 55vh;
+  padding: 80px 50px;
+}
+.container .main-section .info-wrapper .city-name {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.container .main-section .info-wrapper .weather-state {
+  font-size: 15px;
+}
+.container .main-section .info-wrapper .temperature {
+  position: relative;
+  font-size: 50px;
+}
+.container .main-section .info-wrapper .temperature::after {
+  content: "o";
+  font-size: 20px;
+  position: absolute;
+}
+.container .additional-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+.container .additional-section .row .item .label {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
