@@ -11,6 +11,7 @@ body {
   background-size: cover;
   height: 100vh;
   padding-top: 40px;
+  box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 .container {
@@ -21,8 +22,6 @@ body {
   border-radius: 5px;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
-  box-shadow: 1 1 1 0 #ccc;
-  box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 .container .title-app {
   text-align: center;
@@ -89,6 +88,19 @@ body {
 .container .additional-section .row .item .label {
   font-weight: 300;
   font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    box-shadow: unset;
+    width: 100%;
+  }
+  .container .search-icon {
+    display: none;
+  }
+  .container .search-input {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

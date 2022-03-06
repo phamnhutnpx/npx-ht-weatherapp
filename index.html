@@ -19,43 +19,48 @@
 
 <body>
     <div class="container">
-        <h3 class="title-app">NPX THỜI TIẾT</h3>
+        <h1 class="title-app">NPX THỜI TIẾT</h1>
         <div class="main-section">
             <div class="search-bar">
                 <i class="search-icon fa-solid fa-magnifying-glass-location"></i>
                 <input class="search-input" placeholder="Tìm kiếm thành phố..." type="text" id="search-input"
                     name="search-city" />
+
             </div>
             <div class="info-wrapper">
-                <p class="city-name">Ho Chi Minh</p>
-                <p class="weather-state">Mây mưa</p>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon">
-                <p class="temperature">30</p>
+                <p class="city-name">Thành phố</p>
+                <span class="id-country">Quốc gia</span>
+                <p class="weather-state">Không tìm thấy</p>
+                <img class="weather-icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon">
+                <p class="temperature"></p>
             </div>
         </div>
         <div class="additional-section">
             <div class="row">
                 <div class="item">
                     <div class="label">Mặt trời mọc</div>
-                    <div class="value">6:15</div>
+                    <div class="value sunrise">-- AM</div>
                 </div>
                 <div class="item">
                     <div class="label">Mặt trời lặn</div>
-                    <div class="value">12:02</div>
+                    <div class="value sunset">-- PM</div>
                 </div>
             </div>
             <div class="row">
                 <div class="item">
                     <div class="label">Độ ẩm</div>
-                    <div class="value">50%</div>
+                    <div class="value "><span class="humidity">--</span> %</div>
                 </div>
                 <div class="item">
                     <div class="label">Gió</div>
-                    <div class="value">12km/h</div>
+                    <div class="value"><span class="speed">--</span> km/h</div>
                 </div>
             </div>
         </div>
     </div>
+    <script type='module' src='./config.js'></script>
+    <script type="module" src="./main.js"></script>
+    <script src="./moment.js"></script>
 </body>
 
 </html>
